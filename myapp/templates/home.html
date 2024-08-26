@@ -8,6 +8,7 @@
 <body>
     Home Page
     <form method="POST">
+        {% csrf_token %}
         Name: <input type="text" name="name" required>
         Phone: <input type="text" name="phone" required>
         <button type="submit">Submit</button>
